@@ -1,0 +1,91 @@
+
+/* MUSIC NOTES BACKGROUND */
+
+.music-notes {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.music-notes span {
+  position: absolute;
+  color: #B9A47A;
+  opacity: 0.22;
+  font-size: 38px;
+  animation: floatNote 8s ease-in-out infinite;
+  user-select: none;
+}
+
+.music-notes span:nth-child(1) {
+  top: 12%;
+  left: 7%;
+  font-size: 45px;
+  animation-delay: 0s;
+}
+
+.music-notes span:nth-child(2) {
+  top: 32%;
+  left: 22%;
+  font-size: 30px;
+  animation-delay: 2s;
+}
+
+.music-notes span:nth-child(3) {
+  top: 68%;
+  left: 10%;
+  font-size: 50px;
+  animation-delay: 3s;
+}
+
+.music-notes span:nth-child(4) {
+  top: 20%;
+  right: 12%;
+  font-size: 42px;
+  animation-delay: 1s;
+}
+
+.music-notes span:nth-child(5) {
+  top: 55%;
+  right: 23%;
+  font-size: 34px;
+  animation-delay: 4s;
+}
+
+.music-notes span:nth-child(6) {
+  top: 82%;
+  right: 8%;
+  font-size: 48px;
+  animation-delay: 2.5s;
+}
+
+.music-notes span:nth-child(7) {
+  top: 45%;
+  right: 5%;
+  font-size: 27px;
+  animation-delay: 5s;
+}
+
+.music-notes span:nth-child(8) {
+  top: 90%;
+  left: 40%;
+  font-size: 35px;
+  animation-delay: 1.5s;
+}
+
+@keyframes floatNote {
+  0%, 100% {
+    transform: translateY(0) rotate(-10deg);
+  }
+
+  50% {
+    transform: translateY(-25px) rotate(12deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .music-notes span {
+    animation: none;
+  }
+}
